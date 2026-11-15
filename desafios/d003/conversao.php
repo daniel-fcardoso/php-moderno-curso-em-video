@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <main>
         <h1>Resultado Final</h1>
         <?php 
             $din = $_GET["din"] ?? 0;
@@ -16,7 +16,7 @@
             echo "<p><strong>*Cotacao fixa de R$5,67</strong> informada diretamente no codigo.</p>";
         ?>
         <p><a href="javascript:history.go(-1)"><button>Voltar</button></a></p>
-    </section>
+    </main>
 </body>
 </html>
 
