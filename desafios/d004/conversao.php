@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <main>
         <h1>Resultado Final</h1>
         <?php 
             $din = $_GET["din"] ?? 0;
@@ -34,6 +34,6 @@
             }
         ?>          
         <p><a href="javascript:history.go(-1)"><button>Voltar</button></a></p>
-    </section>
+    </main>
 </body>
 </html>

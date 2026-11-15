@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <main>
         <h1>Analisador de Numero Real</h1>
         <?php 
             $num = $_GET["num"] ?? 0;
@@ -18,6 +18,6 @@
             "</strong> </li></ul>";
         ?>
         <p><a href="javascript:history.go(-1)"><button>Voltar</button></a></p>
-    </section>
+    </main>
 </body>
 </html>
