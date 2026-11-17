@@ -22,7 +22,7 @@
         </form>
     </main>
     <section id="resultado">
-        <h2>Estrotura da Divisao</h2>
+        <h2>Estrutura da Divisao</h2>
         <?php 
             $resultado = $dividendo / $divisor;
             $resto = $dividendo % $divisor;
