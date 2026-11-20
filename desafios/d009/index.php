@@ -18,7 +18,7 @@
     ?>
     <main>
         <h2>Medias Aritmeticas</h2>
-        <form action="?>=$_SERVER['PHP_SELF']?>" method="get">
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="primeirovalor">1 Valor</label>
             <input type="number" name="primeirovalor" id="primeirovalor" value="<?=$valor1?>">
             <label for="primeiropeso">1 Peso</label>
