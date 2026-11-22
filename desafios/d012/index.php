@@ -29,7 +29,7 @@
         <h1>Calculadora de Tempo</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="tempo">Qual e o total de segundos?</label>
-            <input type="number" name="tempo" id="tempo" value="<?=$total_segundos?>">
+            <input type="number" name="tempo" id="tempo" min="0"  required step="1" value="<?=$total_segundos?>">
             <input type="submit" value="Calcular">
         </form>
     </main>

@@ -16,10 +16,9 @@
         <h1>Reajustador de Precos</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>">
             <label for="produto">Preco do Produto(R$)</label>
-            <input type="number" name="produto" id="produto" value="<?=$preco?>">
-            <label for="percentual">Qual sera o percentual do reajuste?</label>
-            <input type="range" name="percentual" id="percentual" value="<?=$aumento?>" oninput="resultadopercentual.value = this.value">
-            <output id="resultadopercentual " for="percentual"><?= "$aumento"?></output>
+            <input type="number" name="produto" id="produto" value="<?=$preco?>" step="0.01">
+            <label for="percentual">Qual sera o percentual do reajuste? <strong><span id="p">?</span>%</strong></label>
+            <input type="range" name="percentual" id="percentual" min="0" max="100" step="1"  value="<?=$aumento?>" oninput="mudaValor()">
             <input type="submit" value="Reajustar">
         </form>
     </main>
@@ -27,5 +26,13 @@
         <h2>Resultado do Reajuste</h2>
         <?= "O produto que custava R$" . number_format($preco,2,",",".") . " com <strong>$aumento% de aumento</strong> vai passar a custar <strong>R$" . number_format($total,2,",",".") . "</strong> a partir de agora"?>
     </section>
+
+    <script>
+        mudaValor();
+
+        function mudaValor() {
+            p.innerText = percentual.value;
+        }
+    </script>
 </body>
 </html>
