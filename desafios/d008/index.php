@@ -25,7 +25,7 @@
         <h2>Resultado final</h2>
         <?php 
             echo "<p>Analisando o <strong>Numero $numero</strong>, temos:</p>";
-            echo "<ul><li>A sua raiz quadrada e <strong>". number_format($raizquadrada, 3) . "</strong></li><li>A sua raiz cubica e <strong>" .number_format($raizcubica, 3) ."</strong></li></ul>";
+            echo "<ul><li>A sua raiz quadrada e <strong>". number_format($raizquadrada, 3,',','.') . "</strong></li><li>A sua raiz cubica e <strong>" .number_format($raizcubica, 3,',','.') ."</strong></li></ul>";
         ?>
     </section>
 </body>

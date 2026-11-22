@@ -22,11 +22,11 @@
             <label for="primeirovalor">1 Valor</label>
             <input type="number" name="primeirovalor" id="primeirovalor" value="<?=$valor1?>">
             <label for="primeiropeso">1 Peso</label>
-            <input type="number" name="primeiropeso" id="primeiropeso" value="<?=$peso1?>">
+            <input type="number" name="primeiropeso" id="primeiropeso" value="<?=$peso1?>" min="1" required>
             <label for="primeirovalor">2 Valor</label>
             <input type="number" name="segundovalor" id="segundovalor" value="<?=$valor2?>">
             <label for="primeiropeso">2 Peso</label>
-            <input type="number" name="segundopeso" id="segundopeso" value="<?=$peso2?>">
+            <input type="number" name="segundopeso" id="segundopeso" value="<?=$peso2?>" min="1" required>
             <input type="submit" value="Calcular Medias">
         </form>
     </main>
@@ -35,7 +35,7 @@
         <h2>Calculo das Medias</h2>
         <?php 
             echo "<p>Analisando os valores $valor1 e $valor2</p>";
-            echo "<ul><li>A <strong>Media Aritmetica Simples</strong> entre os valores e igual a " . number_format($mediasimples,2,",") . ".</li><li>A <strong>Media Aritmetica Ponderada</strong> com pesos $peso1 e $peso2 e igual a " . number_format($mediaponderada,2,','). ".</li></ul>";
+            echo "<ul><li>A <strong>Media Aritmetica Simples</strong> entre os valores e igual a " . number_format($mediasimples,2,",",'.') . ".</li><li>A <strong>Media Aritmetica Ponderada</strong> com pesos $peso1 e $peso2 e igual a " . number_format($mediaponderada,2,',','.'). ".</li></ul>";
         ?>
     </section>
 </body>
